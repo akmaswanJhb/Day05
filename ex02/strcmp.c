@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   strcmp.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: akmaswan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/15 16:06:32 by akmaswan          #+#    #+#             */
-/*   Updated: 2020/07/17 11:04:40 by akmaswan         ###   ########.fr       */
+/*   Created: 2020/07/17 11:20:49 by akmaswan          #+#    #+#             */
+/*   Updated: 2020/07/17 11:28:19 by akmaswan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+int	ft_strcmp(char *s1, char s2)
 	{
 		int i;
 		i = 0;
-		
-			while( i < n)
 
-				{
-				dest[i] = src[i];
+		while(s1[i]	!= '\0')
+			{
+				s2[i] = s1[i];
 				i = i + 1;
-				}
-			return(dest);
+			}
+		return(s2);
 	}
-
